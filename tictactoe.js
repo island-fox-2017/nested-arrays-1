@@ -17,6 +17,6 @@ function tic_tac_toe_board() {
       }
     }
   }
-  return board.join(' | ')
+  return board
 }
 console.log(tic_tac_toe_board()) // => make a random tic tic board
