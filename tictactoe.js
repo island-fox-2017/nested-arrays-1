@@ -7,7 +7,7 @@ function tic_tac_toe_board () {
     var baris = [];
     for (var j = 0; j < 3; j++) {
       var kemunculanAcak = Math.floor(Math.random() * 2);
-      if (kemunculanAcak == 1 && jumlahX < 5 || jumlahO >= 5) {
+      if (kemunculanAcak == 1 && jumlahX < 5 || jumlahO == 5) {
         baris.push('X');
         jumlahX++;
       } else {
