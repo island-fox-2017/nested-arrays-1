@@ -4,15 +4,14 @@ const makeChessboard = () => {
   
   // ... write your code here
   let chessMan = ['Benteng', 'Kuda', 'Gajah', 'Ratu', 'Raja', 'Menteri', 'Kuda', 'Benteng'],
-    color = ['Black', 'White'],
+    color = ['Hitam', 'Putih'],
     pion = ['Pion'],
     chessboard = [],
-    board = [],
-    row,
-    col;
+    board = []
     
-    for(row=0; row<8; row++){
-      for(col=0; col<8; col++){
+    for(let row=0; row<8; row++){
+      
+      for(let col=0; col<8; col++){
         if(row == 0){
           chessboard.push(chessMan[col] + ' ' + color[0])
         }else if(row == 1){
@@ -26,13 +25,12 @@ const makeChessboard = () => {
         }
       }
     }
-
-  let i,j, square=8;
-  for(i=0, j=chessboard.length; i<j; i+=square){
-    // console.log(i);
-    // console.log(j);
-    board.push(chessboard.slice(i,i+square))
-    // console.log(chessboard.slice(i,i+square));
+    
+    
+// console.log(chessboard);
+  let row,col, square=8;
+  for(row=0, col=chessboard.length; row<col; row+=square){
+    board.push(chessboard.slice(row,row+square))
   }
     return board
 }
