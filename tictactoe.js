@@ -10,27 +10,16 @@ function tic_tac_toe_board () {
 
   for(i=0;i<3;i++){
     for(j=0;j<3;j++){
-
+      random =  Math.floor(Math.random()*2);
         if(random == 1 && jumlahX <= 4){
           boardtictac[i].push("x")
           jumlahX = jumlahX + 1;
-            // if(jumlahX<=4){
-              random =  Math.floor(Math.random()*2);
-            // } else {
-            //   random = 0;
-            // }
-        }else if(jumlahO<=4){
-          boardtictac[i].push("o")
-          random =  Math.floor(Math.random()*2);
-          jumlahO = jumlahO + 1;
-            if(jumlahO<=4){
-              random =  Math.floor(Math.random()*2);
-            } else {
-              random = 1;
-            }
-         }else {
-           boardtictac[i].push("x")
-         }
+        } else if(jumlahO<=4){
+            boardtictac[i].push("o")
+            jumlahO = jumlahO + 1;
+        } //else {
+        //    boardtictac[i].push("x")
+        //  }
 
     }
   }
