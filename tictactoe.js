@@ -10,13 +10,13 @@ function tic_tac_toe_board () {
       for (var j=0; j<3; j++) {
         var random = Math.floor(Math.random()*2)
         // console.log(random);
-        if (random==1 && counto<4 || countx==5) {
+        if (random==1 && countx<5 || counto==5) {
           row.push('x')
-          counto += 1
+          countx += 1
         }
         else {
           row.push('o')
-          countx += 1
+          counto += 1
         }
       }
       arrHasil.push(row)

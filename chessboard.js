@@ -1,12 +1,13 @@
 'use strict'
 
 const makeChessboard = () => {
-  let chessboard = [[],[],[],[],[],[],[],[]]
+  let chessboard = []
   let bidak = ['benteng', 'kuda', 'peluncur', 'panglima', 'ratu', 'peluncur', 'kuda', 'benteng']
 
   // ... write your code here
-  for (var i=0; i<chessboard.length; i++) {
-    for (var j=0; j<chessboard.length; j++) {
+  for (var i=0; i<bidak.length; i++) {
+    chessboard.push([])
+    for (var j=0; j<bidak.length; j++) {
       if (i == 0) {
         chessboard[i].push(bidak[j]+' hitam')
       }
